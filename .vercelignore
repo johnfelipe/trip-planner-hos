@@ -1,0 +1,5 @@
+backend
+backend-deploy
+*.py
+manage.py
+requirements.txt
