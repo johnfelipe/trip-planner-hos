@@ -1,0 +1,54 @@
+.route-map-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.route-map-container .leaflet-container {
+  border-radius: 12px 12px 0 0;
+}
+
+.map-legend {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.map-legend h4 {
+  font-size: 0.85rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #4a5568;
+}
+
+.legend-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.custom-marker {
+  background: transparent !important;
+  border: none !important;
+}

@@ -1,0 +1,185 @@
+.daily-log-sheet {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  page-break-inside: avoid;
+}
+
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #1a365d;
+}
+
+.log-title h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.log-subtitle {
+  font-size: 0.8rem;
+  color: #718096;
+}
+
+.day-badge {
+  background: #1a365d;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.log-info-grid {
+  margin-bottom: 1rem;
+}
+
+.log-info-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-field {
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.info-field label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #4a5568;
+  white-space: nowrap;
+}
+
+.info-field span {
+  font-size: 0.9rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #e2e8f0;
+  flex: 1;
+}
+
+.graph-container {
+  margin: 1rem 0;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.log-canvas {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+.hours-summary {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.hours-summary h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+}
+
+.hours-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hour-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: #f7fafc;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.hour-item.total {
+  background: #ebf8ff;
+  border-color: #90cdf4;
+  font-weight: 600;
+}
+
+.hour-label {
+  font-size: 0.8rem;
+  color: #4a5568;
+}
+
+.hour-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a365d;
+}
+
+.remarks-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.remarks-section h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+}
+
+.remarks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.remark-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.3rem 0;
+  font-size: 0.8rem;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.remark-time {
+  font-family: monospace;
+  color: #4a5568;
+  white-space: nowrap;
+  min-width: 140px;
+}
+
+.remark-text {
+  color: #2d3748;
+}
+
+.remark-location {
+  color: #718096;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .daily-log-sheet {
+    padding: 1rem;
+  }
+
+  .log-info-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hours-grid {
+    flex-direction: column;
+  }
+}

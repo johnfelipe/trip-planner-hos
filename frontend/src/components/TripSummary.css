@@ -1,0 +1,156 @@
+.trip-summary {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.trip-summary h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-card {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #ebf8ff 0%, #bee3f8 100%);
+  border-radius: 8px;
+  border: 1px solid #90cdf4;
+}
+
+.card-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a365d;
+}
+
+.card-label {
+  font-size: 0.8rem;
+  color: #4a5568;
+  margin-top: 0.25rem;
+}
+
+.route-legs {
+  margin-bottom: 1.5rem;
+}
+
+.route-legs h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+}
+
+.leg-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #e2e8f0;
+  font-size: 0.9rem;
+}
+
+.leg-from, .leg-to {
+  font-weight: 500;
+}
+
+.leg-arrow {
+  color: #2b6cb0;
+  font-size: 1.1rem;
+}
+
+.leg-distance, .leg-duration {
+  margin-left: auto;
+  color: #718096;
+  font-size: 0.85rem;
+}
+
+.leg-distance {
+  min-width: 60px;
+}
+
+.stops-list {
+  margin-top: 1rem;
+}
+
+.stops-list h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #4a5568;
+}
+
+.stops-table {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stop-header {
+  display: grid;
+  grid-template-columns: 100px 1fr 80px 90px;
+  padding: 0.6rem 1rem;
+  background: #f7fafc;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #4a5568;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.stop-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 80px 90px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: center;
+}
+
+.stop-row:last-child {
+  border-bottom: none;
+}
+
+.stop-type-badge {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.stop-pickup .stop-type-badge { background: #c6f6d5; color: #276749; }
+.stop-dropoff .stop-type-badge { background: #fed7d7; color: #9b2c2c; }
+.stop-fuel .stop-type-badge { background: #fefcbf; color: #975a16; }
+.stop-rest .stop-type-badge { background: #e9d8fd; color: #553c9a; }
+.stop-sleep .stop-type-badge { background: #bee3f8; color: #2a4365; }
+
+.stop-location {
+  color: #4a5568;
+}
+
+.stop-duration, .stop-mile {
+  color: #718096;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stop-header, .stop-row {
+    grid-template-columns: 80px 1fr 60px;
+  }
+
+  .stop-mile {
+    display: none;
+  }
+}

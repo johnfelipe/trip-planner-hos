@@ -1,0 +1,104 @@
+.trip-form {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.trip-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.label-icon {
+  font-size: 1rem;
+}
+
+.form-group input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2b6cb0;
+  box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #a0aec0;
+}
+
+.help-text {
+  font-size: 0.8rem;
+  color: #718096;
+  margin-top: 0.3rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.875rem;
+  background: linear-gradient(135deg, #2b6cb0 0%, #1a365d 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(43, 108, 176, 0.3);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.assumptions-note {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #ebf8ff;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #2c5282;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-form {
+    padding: 1.5rem;
+  }
+}
