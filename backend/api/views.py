@@ -5,10 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from .route_service import get_full_route
-from .hos_rules import (
-    calculate_trip_plan,
-    DutyStatus,
-)
+from .hos_rules import calculate_trip_plan
 
 
 @api_view(['POST'])

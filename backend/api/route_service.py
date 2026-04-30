@@ -132,8 +132,10 @@ def haversine_distance(lat1: float, lng1: float, lat2: float, lng2: float) -> fl
     dlat = math.radians(lat2 - lat1)
     dlng = math.radians(lng2 - lng1)
 
-    a = (math.sin(dlat / 2) ** 2 +
-         math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(dlng / 2) ** 2)
+    a = (
+        math.sin(dlat / 2) ** 2
+        + math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(dlng / 2) ** 2
+    )
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
     return R * c

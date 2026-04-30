@@ -113,7 +113,6 @@ def calculate_trip_plan(
 
     stops = []
     daily_logs = []
-    segments = []
 
     # State tracking
     current_driving_hours = 0.0
