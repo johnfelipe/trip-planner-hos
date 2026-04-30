@@ -1,5 +1,3 @@
-backend
-backend-deploy
+server
+server-deploy
 *.py
-manage.py
-requirements.txt
