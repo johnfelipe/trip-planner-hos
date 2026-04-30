@@ -16,7 +16,7 @@ function App() {
     setTripData(null);
 
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || '';
+      const apiUrl = process.env.REACT_APP_API_URL || 'https://trip-planner-hos-api-jvfebtxf.fly.dev';
       const response = await fetch(`${apiUrl}/api/trip/plan/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
