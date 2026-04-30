@@ -1,5 +1,8 @@
 # ELD Trip Planner - FMCSA Hours of Service Compliance
 
+**Live Demo:** https://build-tpczakxl.devinapps.com  
+**API:** https://trip-planner-hos-api-jvfebtxf.fly.dev
+
 A full-stack web application that takes trip details as inputs and outputs route instructions with HOS-compliant ELD (Electronic Logging Device) daily log sheets.
 
 ## Features
