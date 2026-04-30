@@ -1,0 +1,14 @@
+[project]
+name = "trip-planner-hos-api"
+version = "1.0.0"
+description = "ELD Trip Planner API - FMCSA Hours of Service Compliance"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "requests>=2.31.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

@@ -13,7 +13,6 @@ const DUTY_STATUSES = [
   { key: 'on_duty_not_driving', label: '4. On Duty (not driving)', row: 3 },
 ];
 
-const HOURS = Array.from({ length: 25 }, (_, i) => i); // 0-24
 
 function DailyLogSheet({ log, tripData }) {
   const canvasRef = useRef(null);
